@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Admin</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>tapOneReview</h2>
+
+        <p>Restaurant Dashboard</p>
+
+        <nav>
+            <a href="#">Dashboard</a>
+            <a href="#">Manage Menu</a>
+            <a href="#">Orders</a>
+            <a href="#">Settings</a>
+        </nav>
+    </aside>
+
+    <main class="main">
+
+        <h1>Dashboard</h1>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>Total Orders</h3>
+                <p>24</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Pending Orders</h3>
+                <p>5</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Sales</h3>
+                <p>Rs. 18,500</p>
+            </div>
+
+        </div>
+
+        <section class="add-food">
+
+            <h2>Add Menu Item</h2>
+
+            <form id="food-form">
+
+                <input
+                    type="text"
+                    id="food-name"
+                    placeholder="Food name"
+                    required>
+
+                <input
+                    type="text"
+                    id="food-category"
+                    placeholder="Category"
+                    required>
+
+                <input
+                    type="number"
+                    id="food-price"
+                    placeholder="Price"
+                    required>
+
+                <input
+                    type="text"
+                    id="food-description"
+                    placeholder="Description">
+
+                <input
+                    type="text"
+                    id="food-image"
+                    placeholder="Image path e.g. images/burger.jpg">
+
+                <button type="submit">Add Food</button>
+
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Menu Items</h2>
+            <div id="admin-menu"></div>
+        </section>
+
+    </main>
+
+</div>
+
+<script src="admin.js"></script>
+
+</body>
+</html>
