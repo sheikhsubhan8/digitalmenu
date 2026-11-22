@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tapOneReview Digital Menu</title>
+</head>
+<body>
+
+    <h1>tapOneReview Digital Menu</h1>
+    <p>Our digital restaurant menu is coming soon!</p>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Digital Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="brand">
+        <h1>Urban Bites</h1>
+        <p>Fresh food, great taste</p>
+    </div>
+
+    <button class="cart-button" onclick="openCart()">
+        🛒 Cart <span id="cart-count">0</span>
+    </button>
+</header>
+
+<section class="hero">
+    <h2>Discover Our Menu</h2>
+    <p>Freshly prepared, made with love.</p>
+</section>
+
+<div class="category-container" id="categories"></div>
+
+<main>
+    <div class="menu-grid" id="menu"></div>
+</main>
+
+<div class="cart-modal" id="cart-modal">
+    <div class="cart-content">
+
+        <button class="close-btn" onclick="closeCart()">✕</button>
+
+        <h2>Your Order</h2>
+
+        <div id="cart-items"></div>
+
+        <h3 id="cart-total">Total: Rs. 0</h3>
+
+        <input
+            type="text"
+            id="customer-name"
+            placeholder="Your name"
+        >
+
+        <input
+            type="text"
+            id="table-number"
+            placeholder="Table number"
+        >
+
+        <button class="checkout-btn" onclick="placeOrder()">
+            Place Order
+        </button>
+
+    </div>
+</div>
+
+<footer>
+    Powered by <strong>tapOneReview</strong>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
